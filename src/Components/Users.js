@@ -16,18 +16,25 @@ export function UsersList() {
 
     return (
       <ul>{users && users.map((user, idx)=> {
-        const {name, gender, location}
         return (
-          <div key={idx}>
+          <div key={idx} className="main-container">
             <ul>
-              <h3>{name}</h3>
-              {console.log(user)}
+                <img src={user.picture.thumbnail} className="user__Img"></img>
+            <h2 className="first__Name">{user.name.first}</h2>
+              <p className="gender__line">{user.gender}</p>
+              <address>
+                <h1 className="user__Name">{user.login.username}</h1>
+              </address>
 
             </ul>
+
           </div>
         )
           
       })}</ul>
-      );
+      
+      
+      
+      )
       
 };

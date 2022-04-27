@@ -1,14 +1,16 @@
+.main-container {
+  background-color: grey;
+  /* border-radius: 50%; */
+}
+
+
 p {
   background-color: aqua;
-  border-radius: %;
+  /* border-radius: %; */
 }
 
 h1 {
   background-color: burlywood;
-  border-radius: %;
+  /* border-radius:  */
 }
 
-.main-container {
-  background-color: grey;
-  border-radius: 50%;
-}
