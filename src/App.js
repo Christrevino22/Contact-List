@@ -1,10 +1,11 @@
-import logo from './logo.svg';
+import Users from './Components/Users'
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-     <h1> Welcome back to the Matrix </h1> 
+     <h1> Welcome back to the Matrix </h1>
+      <Users/>
     </div>
   );
 }
