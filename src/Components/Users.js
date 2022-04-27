@@ -16,10 +16,11 @@ export function UsersList() {
 
     return (
       <ul>{users && users.map((user, idx)=> {
+        const {name, gender, location}
         return (
           <div key={idx}>
             <ul>
-              <h3>{user.name.first}</h3>
+              <h3>{name}</h3>
               {console.log(user)}
 
             </ul>
