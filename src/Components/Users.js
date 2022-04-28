@@ -15,10 +15,10 @@ export function UsersList() {
  
 
     return (
-      <ul>{users && users.map((user, idx)=> {
+      <div className='main-container'>{users && users.map((user, idx)=> {
         return (
-          <div key={idx} className="main-container">
-            <ul>
+          <div key={idx} className="inner-container">
+            
                 <img src={user.picture.thumbnail} className="user__Img"></img>
             <h2 className="first__Name">{user.name.first}</h2>
               <p className="gender__line">{user.gender}</p>
@@ -26,12 +26,12 @@ export function UsersList() {
                 <h1 className="user__Name">{user.login.username}</h1>
               </address>
 
-            </ul>
+          
 
           </div>
         )
           
-      })}</ul>
+      })}</div>
       
       
       
